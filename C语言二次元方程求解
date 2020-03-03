@@ -1,0 +1,27 @@
+#include<stdio.h>
+#include<math.h>
+int main()
+
+{
+    double a,b,c,disc,root1,root2;
+    printf("ax* x + bx +c =0 : \n");
+    printf("please enter a , b ,c value: \n");
+    scanf("%lf%lf%lf",&a,&b,&c);
+    disc=b*b-4*a*c;
+    if( disc > 0 ){
+    root1=(-b+sqrt(disc))/2*a;
+    root2=(-b-sqrt(disc))/2*a;
+    printf("have two solution : %lf , %lf\n",root1,root2);
+    }
+    else if ( disc == 0 ){ 
+      root1=(-b+sqrt(disc))/2*a;
+    printf("have one solution : %lf \n", root1);
+    }
+    else{
+    printf(" no have solution !!!\n");
+    }
+    return 0;
+}
+求解二次方程的根
+本人是新手，如有错误还望提醒
+______学习的路很长，但学习的过程是很快乐的

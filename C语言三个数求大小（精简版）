@@ -1,0 +1,30 @@
+#include<stdio.h>
+int main()
+{
+    //单用if嵌套语句未免太过复杂，头脑思绪乱，代码又多
+    //这里我用了一个goto语句
+    //C语言中goto关键字可以实现跳转执行的功能
+    //goto语句是一种无条件转移语句，其使用格式如下：goto  语句标号;
+    //举例说明如下：
+    int a,b,c,t;//定义4个基本整型变量a,b,c,t;
+    printf("Please input : a, b, c\n");
+    scanf("%d%d%d",&a,&b,&c);
+    begin: printf("please wait ...\n"); 
+    if( c>b )//如果c大于b，借助中间变量t实现c、b值互换；确保b大于a
+    {
+    t=c;
+    c=b;
+    b=t;
+    }
+    if( b>a )//如果b大于a，借助中间变量t实现b、a值互换；确保a大于b
+    {
+    t=b;
+    b=a;
+    a=t;
+    goto begin;
+    }
+    printf("由大到小 :%d, %d, %d \n",a,b,c); //输出a,b,c的值顺序输出；
+    return 0;
+}
+已经过测试！个人觉得这是最简便的语句吧
+______学习的路很漫长，但学习的过程会很快乐的

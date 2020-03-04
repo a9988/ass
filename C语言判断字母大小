@@ -1,0 +1,28 @@
+```c
+#include <stdio.h>
+int main()
+
+{
+    char a;
+    printf("please enter : \n");
+    scanf("%c",&a);
+    if (('A' < a )&& (a < 'Z'))
+    {
+        printf("是大写字母 \n");
+    }
+    else if ((a > 'a' )&& (a < 'z'))
+    {
+        printf("是小写字母\n");
+    }
+    else
+    {
+        printf("erroring !!!");
+    }
+    return 0;
+}
+```
+
+> 字符类型用char
+> scanf语句接入输入符格式为%c
+> if语句判断时自动匹配sacll值
+______学习的路很漫长，但学习的过程会很快乐的

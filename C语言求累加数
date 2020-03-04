@@ -1,0 +1,21 @@
+```c
+#include<stdio.h>
+int main()
+
+{   
+    int num=0,i=1,n;
+    printf(" 求累加数之和\n 请输入想要累加的位后一位数：\n");
+    scanf("%d",&n);
+    while ( i<=n )
+    {
+        num+=i;
+        i++;
+        printf("%d \t",num);
+    }
+    
+    return 0;
+}
+```
+
+> 求累加数之和无限累加，哈哈
+> ______嘿伙计自信一点，你注定会成为一个优秀的人！！！
